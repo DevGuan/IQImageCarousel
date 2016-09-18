@@ -7,7 +7,7 @@
 //
 
 #import "GFSCarouselCell.h"
-#import "UIImageView+WebCache.h"
+//#import "UIImageView+WebCache.h"
 @interface GFSCarouselCell()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -20,7 +20,7 @@
     _imageUrl = imageUrl;
     // 加载网络图片
     if (imageUrl.length > 0 ) {
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"pic_NULL"]];
+//        [self.imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"pic_NULL"]];
     }else{
         self.imageView.image = [UIImage imageNamed:@"pic_NULL"];
     }

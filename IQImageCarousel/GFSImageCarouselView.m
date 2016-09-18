@@ -80,7 +80,7 @@
     self.carsouselView.bounces = NO;
     
     // 2 添加分页
-    UIPageControl *pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(self.width * 0.5 - 25, self.height - 20, 50, 20)];
+    UIPageControl *pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(self.frame.size.width * 0.5 - 25, self.frame.size.height - 20, 50, 20)];
     
     pageControl.pageIndicatorTintColor   = [UIColor grayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
@@ -214,7 +214,7 @@
     [super layoutSubviews];
 //    [self.carsouselView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:CarsouselSectionNumber * 0.5] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
 
-    self.layout.itemSize = self.size;
+    self.layout.itemSize = self.frame.size;
     self.carsouselView.frame = self.bounds;
     
     CGFloat itemW = self.frame.size.width;

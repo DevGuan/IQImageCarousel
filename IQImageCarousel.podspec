@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'IQImageCarousel'
-s.version = '1.0.0'
+s.version = '1.0.1'
 s.license = 'MIT'
 s.summary = 'An Image Carsoule view on iOS.'
 s.homepage = 'https://github.com/DevGuan/IQImageCarousel'
